@@ -1,6 +1,6 @@
 body {
     
-    font-family: "Lato", sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .sidepanel  {
@@ -51,4 +51,18 @@ body {
   
   .openbtn:hover {
     background-color:#444;
+  }
+  .foodImage{
+      height: 400px;
+      text-align: center;
+      padding: 10px 15px;
+      border: 20px;
+      position: relative;
+  }
+ 
+  h2{
+      text-align: center;
+  }
+  p{
+      text-align: center;
   }
