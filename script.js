@@ -16,6 +16,7 @@ let response;
     .then(json => {
         document.querySelector('.foodImage').src = json.image;
   });
+  
 }
 getBurger();
 
