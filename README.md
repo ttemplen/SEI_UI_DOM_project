@@ -41,3 +41,178 @@ Below is the commented HTML code for this project.:
         <script src="script.js" ></script>
     </body>
 </html> -->
+
+<!-- Below follows the CSS with relavent notation. -->
+
+
+
+<!-- // Below is a simple grid set up which faciltates the adaptive media for smaller screen sizes primarily. -->
+
+
+Body { grid-area: title; }
+footer { grid-area: footer; }
+
+.container{
+    display: grid;
+    grid-template-areas:
+    "title title title"
+    "footer footer footer";
+}  
+
+
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to left, rgb(7, 7, 7), rgb(97, 94, 94) 50%, #eee 75%, rgb(172, 169, 169) 95%);
+  }
+
+
+<!-- //style below for the side panel attributes. -->
+  
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+<!--   
+  //style below for the side panel attributes. -->
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  <!-- What it says  , sidepanel hover color -->
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  <!-- The close button, the "x" for closing the sidepanel. -->
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+  }
+  <!-- /* style button for opening side button  */ -->
+  .openbtn {
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+
+  }
+
+  <!-- The "open menue " button for the side panel. -->
+
+  .openbtn:hover {
+    background-color:#444;
+  }
+
+<!-- Then image properties for the images brought in from the API. -->
+
+  .foodImage{
+      width: 50%;
+      text-align: center;
+      padding: 10px 15px;
+      border: 20px;
+      
+  }
+ 
+  h2{
+      text-align: center;
+  }
+  p{
+      text-align: center;
+  }
+  
+  <!-- The adaptive display features  for the website. -->
+
+@media (max-width: 565px) {
+  .container {
+      grid-template-areas: 
+      "title"
+      "footer";
+  }
+   
+ <!-- Smaller side panel for mobile display. -->
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 140px;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+  }
+  <!-- Smaller font to fit in the smaller side panel. -->
+  .sidepanel a {
+    padding: 5px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 18px;
+  }
+  /* style button for opening side button  */
+  .openbtn {
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+
+  }
+  <!-- Changed the food image for mobile display. -->
+  .foodImage{
+    width: 85%;
+    padding: 5px 5px;
+}
+
+<!-- Changed text alignment and size for mobile display to allow the size pannel to fit. -->
+
+h2{
+  margin-top: 40px;
+}
+
+h2{
+  text-align: left;
+}
+
+p{
+  text-align: left;
+}
+  
+}
